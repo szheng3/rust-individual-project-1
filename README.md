@@ -1,5 +1,5 @@
 # IDS721 Spring 2023 indivusal Project 1 - Rust CLI Tool for machine learning: (summarization for the text)
-
+[![Build Status](https://github.com/guillaume-be/rust-bert/workflows/Build/badge.svg?event=push)](https://github.com/szheng3/rust-individual-project-1/actions)
 For this project, I interviewed a few people who are students. I found that the most common task that they do is to reading the books and summarize the text. So I decided to build a Rust Cli tool that can summarize the text. I used the [rust-cli-template](https://github.com/kbknapp/rust-cli-template)
 and libtorch to host a pretrained model in order to summarize the text.
 ![image](./assets/ml.png)
@@ -23,12 +23,14 @@ $ brew install pytorch@1.13.1
 
 **intel chips users**
 ```
-$ make run
+$ make run PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
+
 ```
 
 **M1 chips users**
 ```
-$ make runarm
+$ make runarm PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
+
 ```
 
 *Below is the screenshot for the results*
