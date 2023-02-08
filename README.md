@@ -4,9 +4,10 @@
 [![Rustfmt](https://github.com/szheng3/rust-individual-project-1/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/rustfmt.yml)
 [![publish to Dockerhub](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml)
 
-# IDS721 Spring 2023 indivusal Project 1 - Rust CLI Tool for machine learning: (summarization for the text)
-For this project, I interviewed a few people who are students. I found that the most common task that they do is to reading the books and summarize the text. So I decided to build a Rust Cli tool that can summarize the text. I used the [rust-cli-template](https://github.com/kbknapp/rust-cli-template)
-and libtorch to host a pretrained model in order to summarize the text.
+# IDS721 Spring 2023 Individual Project 1 - Rust CLI Tool for Text Summarization
+
+This project aims to build a Rust CLI tool that summarizes text, based on the common task of reading and summarizing books among students. The project uses the `rust-cli-template` and `libtorch` to host a pre-trained model for summarization.
+
 ![image](./assets/ml.png)
 
 ## Project Goals/Outcomes
