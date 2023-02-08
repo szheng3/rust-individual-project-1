@@ -7,7 +7,7 @@
 
 # IDS721 Spring 2023 Individual Project 1 - Rust CLI Tool for Text Summarization
 
-This project aims to build a Rust CLI tool that summarizes text, based on the common task of reading and summarizing books among students. The project uses the `rust-cli-template` and `libtorch` to host a pre-trained model for summarization.
+This project aims to build a Rust CLI tool that summarizes text, based on the common task of reading and summarizing books among students. The project uses the `rust clap` and `libtorch` to run a pre-trained `hugging-face` model for summarization.
 
 ![image](./assets/ml.png)
 
