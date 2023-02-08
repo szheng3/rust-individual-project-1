@@ -23,6 +23,9 @@ format-check:
 runarm:
 	export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH&&cargo run -- text -i "$(PARAMETER)"
 
+bench:
+	export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH&&cargo bench -- text -i "$(PARAMETER)"
+
 run:
 	cargo run -- text -i "$(PARAMETER)"
 

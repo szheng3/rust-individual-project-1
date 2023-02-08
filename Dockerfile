@@ -22,8 +22,8 @@ COPY . .
 # Build the application
 RUN cargo build --release
 
- Expose the application port
-EXPOSE 8000
+# Expose the application port
+#EXPOSE 8000
 
 # Set the command to run when the container starts
 #CMD ["./target/release/rust-new-project-template"]
