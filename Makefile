@@ -29,4 +29,7 @@ run:
 release:
 	export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH&&cargo build --release
 
+releasex86:
+	cargo build --release
+
 all: format lint test run
