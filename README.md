@@ -3,6 +3,7 @@
 [![Clippy](https://github.com/szheng3/rust-individual-project-1/actions/workflows/lint.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/lint.yml)
 [![Rustfmt](https://github.com/szheng3/rust-individual-project-1/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/rustfmt.yml)
 [![publish to Dockerhub](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml)
+[![Benchmark](https://github.com/szheng3/rust-individual-project-1/actions/workflows/bench.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/bench.yml)
 
 # IDS721 Spring 2023 Individual Project 1 - Rust CLI Tool for Text Summarization
 
@@ -71,6 +72,9 @@ docker run szheng3/sz-rust-ml-cli:latest 'The Chinese monarchy collapsed in 1912
 
 ## Release notes
 The binary could be downloaded from the release pages. [release](https://github.com/szheng3/rust-individual-project-1/releases)
+
+## Benchmark
+![Benchmark](./assets/report.png)
 
 ## Progress Log
 
