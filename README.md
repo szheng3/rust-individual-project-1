@@ -39,7 +39,16 @@ make run PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revol
 make releasex86
 ```
 
+* Bench
+```
+make benchx86
+```
+
 ## Mac ARM chips users
+* change the path in the Makefile to your libtorch path
+```
+export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH
+```
 * Run, you can pass any text as the parameter at the end of the command. See below.
 ```
 make runarm PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
@@ -49,7 +58,10 @@ make runarm PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Re
 ```
 make release
 ```
-
+* Bench
+```
+make bench
+```
 *Below is the screenshot for the results*
 ![results](./assets/result.png)
 
@@ -73,7 +85,7 @@ docker run szheng3/sz-rust-ml-cli:latest 'The Chinese monarchy collapsed in 1912
 ## Release notes
 The binary could be downloaded from the release pages. [release](https://github.com/szheng3/rust-individual-project-1/releases)
 
-## Benchmark
+## Benchmark Results
 ![Benchmark](./assets/report.png)
 
 ## Progress Log
