@@ -17,4 +17,4 @@ tch = "0.10.1"
 uuid = { version = "1.2.2", features = ["v4"] }
 clap = {version="4.0.32", features=["derive"]}
 [profile.release]
-opt-level = 0
+opt-level = 1
