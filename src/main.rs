@@ -1,5 +1,5 @@
-
 use clap::Parser;
+
 mod lib;
 
 #[derive(Parser)]

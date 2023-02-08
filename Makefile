@@ -17,6 +17,9 @@ lint:
 test:
 	cargo test --quiet
 
+format-check:
+	cargo check
+
 runarm:
 	export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH&&cargo run -- text -i "$(PARAMETER)"
 

@@ -1,21 +1,16 @@
-use serde::Serialize;
-use serde::Deserialize;
-
-
-use exitfailure::ExitFailure;
+use std::sync::Once;
 use std::thread;
 
+use actix_web::rt::Runtime;
+use exitfailure::ExitFailure;
 use rust_bert::bart::{
     BartConfigResources, BartMergesResources, BartModelResources, BartVocabResources,
 };
 use rust_bert::pipelines::summarization::{SummarizationConfig, SummarizationModel};
 use rust_bert::resources::RemoteResource;
+use serde::Deserialize;
+use serde::Serialize;
 use tch::Device;
-
-
-
-use std::sync::Once;
-use actix_web::rt::Runtime;
 
 static mut SUMMARIZATION_MODEL: Option<SummarizationModel> = None;
 
@@ -55,8 +50,7 @@ pub fn init_summarization_model() -> SummarizationModel {
 
     let summarization_model = thread::spawn(move || {
         do_steps().unwrap()
-
     }).join().expect("Thread panicked");
-    return summarization_model
+    return summarization_model;
 }
 
