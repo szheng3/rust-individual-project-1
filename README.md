@@ -28,12 +28,9 @@ $ make run
 
 **M1 chips users**
 ```
-make runarm
+$ make runarm
 ```
-**Intel chips users**
-```
-make run
-```
+
 *Below is the screenshot for the results*
 ![results](./assets/result.png)
 
