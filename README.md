@@ -9,6 +9,8 @@
 
 This project aims to build a Rust CLI tool that summarizes text, based on the common task of reading and summarizing books among students. The project uses the `rust clap` and `libtorch` to run a pre-trained `hugging-face` model for summarization.
 
+## Architectural Diagram
+
 ![image](./assets/ml.png)
 
 ## Project Goals/Outcomes
