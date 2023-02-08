@@ -11,7 +11,7 @@ actix-web = "4.3.0"
 chrono = { version = "0.4.23", features = ["serde"] }
 env_logger = "0.10.0"
 exitfailure = "0.5.1"
-rust-bert = "0.20.0"
+rust-bert = { git = "https://github.com/guillaume-be/rust-bert" }
 serde = { version = "1.0.152", features = ["derive"] }
 tch = "0.10.1"
 uuid = { version = "1.2.2", features = ["v4"] }
