@@ -29,5 +29,5 @@ fn nlp_benchmark(c: &mut Criterion) {
         |b| b.iter(|| summarization_model.summarize(&inputs))
     );
 }
-criterion_group!(benches, sort_arr_benchmark);
+criterion_group!(benches, nlp_benchmark);
 criterion_main!(benches);
