@@ -21,7 +21,7 @@ This project aims to build a Rust CLI tool that summarizes text, based on the co
 1. Install rust via [rustup](https://rustup.rs/)
 2. Install the libtorch (for Mac M1), Intel chips users can skip this step
 ```
-$ brew install pytorch@1.13.1
+brew install pytorch@1.13.1
 ```
 
 
@@ -29,24 +29,24 @@ $ brew install pytorch@1.13.1
 
 * Run
 ```
-$ make run PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
+make run PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
 
 ```
 
 * Release
 ```
-$ make releasex86
+make releasex86
 ```
 
 ## Mac ARM chips users
 * Run
 ```
-$ make runarm PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
+make runarm PARAMETER='The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
 
 ```
 * Release
 ```
-$ make release
+make release
 ```
 
 *Below is the screenshot for the results*
@@ -60,10 +60,15 @@ Github Actions configured in .github/workflows
 
 ## Docker
 
-This repo main branch is automatically published to Dockerhub, you can pull the image from [here](https://hub.docker.com/repository/docker/szheng3/sz-rust-ml-cli/general)
+* This repo main branch is automatically published to Dockerhub with [CI/CD](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml), you can pull the image from [here](https://hub.docker.com/repository/docker/szheng3/sz-rust-ml-cli/general)
 ```
-$ docker pull szheng3/sz-rust-ml-cli:lastest
+docker pull szheng3/sz-rust-ml-cli:lastest
 ```
+* Run the docker image
+```
+docker run szheng3/sz-rust-ml-cli:lastest 'The Chinese monarchy collapsed in 1912 with the Xinhai Revolution, when the Republic of China (ROC) replaced the Qing dynasty. In its early years as a republic, the country underwent a period of instability known as the \"Warlord Era\" before mostly reunifying in 1928 under a Nationalist government. A civil war between the nationalist Kuomintang (KMT) and the Chinese Communist Party (CCP) began in 1927. Japan invaded China in 1937, starting the Second Sino-Japanese War and temporarily halting the civil war. The surrender and expulsion of Japanese forces from China in 1945 left a power vacuum in the country, which led to renewed fighting between the CCP and the Kuomintang.'
+```
+
 ## Release notes
 The binary could be downloaded from the release pages. [release](https://github.com/szheng3/rust-individual-project-1/releases)
 
@@ -72,8 +77,10 @@ The binary could be downloaded from the release pages. [release](https://github.
 - [x] Configure Github Codespaces.
 - [x] Initialise Rust project with pretrained model from [hugging-face](https://huggingface.co/transformers/model_doc/bart.html)
 - [x] Add clap command line parsing for arguments (Text)
-- [x] Dockerize the project.
+- [x] Dockerized the project.
 - [x] CI/CD with Github Actions
+- [x] Tag and Releases
+- [x] Benchmark
 
 ## References
 
