@@ -32,6 +32,12 @@ run:
 release:
 	export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH&&cargo build --release
 
+bench:
+	export LIBTORCH=/opt/homebrew/Cellar/pytorch/1.13.1 &&export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH&&cargo bench
+
+benchx86:
+	cargo bench
+
 releasex86:
 	cargo build --release
 

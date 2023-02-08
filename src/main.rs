@@ -1,6 +1,8 @@
 use clap::Parser;
 
 mod lib;
+mod tests;
+
 
 #[derive(Parser)]
 #[clap(
