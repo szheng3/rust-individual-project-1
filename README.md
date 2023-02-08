@@ -1,5 +1,10 @@
+[![Tests](https://github.com/szheng3/rust-individual-project-1/actions/workflows/tests.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/tests.yml)
+[![Build binary release](https://github.com/szheng3/rust-individual-project-1/actions/workflows/release.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/release.yml)
+[![Clippy](https://github.com/szheng3/rust-individual-project-1/actions/workflows/lint.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/lint.yml)
+[![Rustfmt](https://github.com/szheng3/rust-individual-project-1/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/rustfmt.yml)
+[![publish to Dockerhub](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml/badge.svg)](https://github.com/szheng3/rust-individual-project-1/actions/workflows/publish.yml)
+
 # IDS721 Spring 2023 indivusal Project 1 - Rust CLI Tool for machine learning: (summarization for the text)
-[![Build Status](https://github.com/guillaume-be/rust-bert/workflows/Build/badge.svg?event=push)](https://github.com/szheng3/rust-individual-project-1/actions)
 For this project, I interviewed a few people who are students. I found that the most common task that they do is to reading the books and summarize the text. So I decided to build a Rust Cli tool that can summarize the text. I used the [rust-cli-template](https://github.com/kbknapp/rust-cli-template)
 and libtorch to host a pretrained model in order to summarize the text.
 ![image](./assets/ml.png)
